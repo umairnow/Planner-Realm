@@ -7,28 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6A8E30E1BD63181003F5C3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E30D1BD63181003F5C3F /* main.m */; };
-		B6A8E3111BD63181003F5C3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E3101BD63181003F5C3F /* AppDelegate.m */; };
-		B6A8E3141BD63181003F5C3F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E3131BD63181003F5C3F /* FirstViewController.m */; };
-		B6A8E3171BD63181003F5C3F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E3161BD63181003F5C3F /* SecondViewController.m */; };
-		B6A8E31A1BD63181003F5C3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A8E3181BD63181003F5C3F /* Main.storyboard */; };
-		B6A8E31C1BD63181003F5C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A8E31B1BD63181003F5C3F /* Assets.xcassets */; };
-		B6A8E31F1BD63181003F5C3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A8E31D1BD63181003F5C3F /* LaunchScreen.storyboard */; };
+		B6A8E37F1BD6352B003F5C3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E32A1BD6352B003F5C3F /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		B6A8E3811BD6352B003F5C3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E32C1BD6352B003F5C3F /* main.m */; settings = {ASSET_TAGS = (); }; };
+		B6A8E3891BD6352B003F5C3F /* EmptySegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E3431BD6352B003F5C3F /* EmptySegue.m */; settings = {ASSET_TAGS = (); }; };
+		B6A8E38A1BD6352B003F5C3F /* MessageBarStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E3461BD6352B003F5C3F /* MessageBarStyleSheet.m */; settings = {ASSET_TAGS = (); }; };
+		B6A8E39B1BD6352B003F5C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A8E3771BD6352B003F5C3F /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		B6A8E39C1BD6352B003F5C3F /* SBMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A8E3791BD6352B003F5C3F /* SBMain.storyboard */; settings = {ASSET_TAGS = (); }; };
+		B6A8E39D1BD6352B003F5C3F /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E37C1BD6352B003F5C3F /* Constants.m */; settings = {ASSET_TAGS = (); }; };
+		B6A8E39E1BD6352B003F5C3F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E37E1BD6352B003F5C3F /* Utility.m */; settings = {ASSET_TAGS = (); }; };
+		B6C8E07F1BD662650076E6FF /* VCAccounts.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E07E1BD662650076E6FF /* VCAccounts.m */; settings = {ASSET_TAGS = (); }; };
+		B6C8E0821BD662870076E6FF /* VCCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E0811BD662870076E6FF /* VCCharts.m */; settings = {ASSET_TAGS = (); }; };
+		B6C8E0851BD662DB0076E6FF /* VCExpenses.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E0841BD662DB0076E6FF /* VCExpenses.m */; settings = {ASSET_TAGS = (); }; };
+		B6C8E0881BD662ED0076E6FF /* VCIncomes.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E0871BD662ED0076E6FF /* VCIncomes.m */; settings = {ASSET_TAGS = (); }; };
+		F2A43AC687D1FE812ECCFF1B /* libPods-Planner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC58EEDD36D98BDD2125BC2C /* libPods-Planner.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA24A4124E03C13123460E3D /* Pods-Planner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Planner/Pods-Planner.debug.xcconfig"; sourceTree = "<group>"; };
 		B6A8E3091BD63181003F5C3F /* Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planner.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6A8E30D1BD63181003F5C3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B6A8E30F1BD63181003F5C3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B6A8E3101BD63181003F5C3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B6A8E3121BD63181003F5C3F /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		B6A8E3131BD63181003F5C3F /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		B6A8E3151BD63181003F5C3F /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		B6A8E3161BD63181003F5C3F /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		B6A8E3191BD63181003F5C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B6A8E31B1BD63181003F5C3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B6A8E31E1BD63181003F5C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B6A8E3201BD63181003F5C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A8E3291BD6352B003F5C3F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6A8E32A1BD6352B003F5C3F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6A8E32B1BD6352B003F5C3F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A8E32C1BD6352B003F5C3F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6A8E32D1BD6352B003F5C3F /* Planner-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Planner-Prefix.pch"; sourceTree = "<group>"; };
+		B6A8E3421BD6352B003F5C3F /* EmptySegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptySegue.h; sourceTree = "<group>"; };
+		B6A8E3431BD6352B003F5C3F /* EmptySegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptySegue.m; sourceTree = "<group>"; };
+		B6A8E3451BD6352B003F5C3F /* MessageBarStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageBarStyleSheet.h; sourceTree = "<group>"; };
+		B6A8E3461BD6352B003F5C3F /* MessageBarStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageBarStyleSheet.m; sourceTree = "<group>"; };
+		B6A8E3771BD6352B003F5C3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6A8E3791BD6352B003F5C3F /* SBMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBMain.storyboard; sourceTree = "<group>"; };
+		B6A8E37B1BD6352B003F5C3F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		B6A8E37C1BD6352B003F5C3F /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		B6A8E37D1BD6352B003F5C3F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		B6A8E37E1BD6352B003F5C3F /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		B6C8E07D1BD662650076E6FF /* VCAccounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCAccounts.h; sourceTree = "<group>"; };
+		B6C8E07E1BD662650076E6FF /* VCAccounts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCAccounts.m; sourceTree = "<group>"; };
+		B6C8E0801BD662870076E6FF /* VCCharts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCharts.h; sourceTree = "<group>"; };
+		B6C8E0811BD662870076E6FF /* VCCharts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCharts.m; sourceTree = "<group>"; };
+		B6C8E0831BD662DB0076E6FF /* VCExpenses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCExpenses.h; sourceTree = "<group>"; };
+		B6C8E0841BD662DB0076E6FF /* VCExpenses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCExpenses.m; sourceTree = "<group>"; };
+		B6C8E0861BD662ED0076E6FF /* VCIncomes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCIncomes.h; sourceTree = "<group>"; };
+		B6C8E0871BD662ED0076E6FF /* VCIncomes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCIncomes.m; sourceTree = "<group>"; };
+		BC58EEDD36D98BDD2125BC2C /* libPods-Planner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Planner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFFA26693D6C996CB14F01C /* Pods-Planner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Planner/Pods-Planner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A43AC687D1FE812ECCFF1B /* libPods-Planner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AB3DD0443915EAF29E0AD30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC58EEDD36D98BDD2125BC2C /* libPods-Planner.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9A84B915F305F5E6675B6B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA24A4124E03C13123460E3D /* Pods-Planner.debug.xcconfig */,
+				DDFFA26693D6C996CB14F01C /* Pods-Planner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B6A8E3001BD63181003F5C3F = {
 			isa = PBXGroup;
 			children = (
 				B6A8E30B1BD63181003F5C3F /* Planner */,
 				B6A8E30A1BD63181003F5C3F /* Products */,
+				A9A84B915F305F5E6675B6B2 /* Pods */,
+				7AB3DD0443915EAF29E0AD30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,27 +102,215 @@
 		B6A8E30B1BD63181003F5C3F /* Planner */ = {
 			isa = PBXGroup;
 			children = (
-				B6A8E30F1BD63181003F5C3F /* AppDelegate.h */,
-				B6A8E3101BD63181003F5C3F /* AppDelegate.m */,
-				B6A8E3121BD63181003F5C3F /* FirstViewController.h */,
-				B6A8E3131BD63181003F5C3F /* FirstViewController.m */,
-				B6A8E3151BD63181003F5C3F /* SecondViewController.h */,
-				B6A8E3161BD63181003F5C3F /* SecondViewController.m */,
-				B6A8E3181BD63181003F5C3F /* Main.storyboard */,
-				B6A8E31B1BD63181003F5C3F /* Assets.xcassets */,
-				B6A8E31D1BD63181003F5C3F /* LaunchScreen.storyboard */,
-				B6A8E3201BD63181003F5C3F /* Info.plist */,
-				B6A8E30C1BD63181003F5C3F /* Supporting Files */,
+				B6C8E07A1BD65FE90076E6FF /* DataLayer */,
+				B6A8E3281BD6352B003F5C3F /* Application */,
+				B6A8E3391BD6352B003F5C3F /* Libraries */,
+				B6A8E3C51BD63B4B003F5C3F /* Modules */,
+				B6A8E3761BD6352B003F5C3F /* Resources */,
+				B6A8E3781BD6352B003F5C3F /* Storyboards */,
+				B6A8E37A1BD6352B003F5C3F /* Utilities */,
 			);
 			path = Planner;
 			sourceTree = "<group>";
 		};
-		B6A8E30C1BD63181003F5C3F /* Supporting Files */ = {
+		B6A8E3281BD6352B003F5C3F /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				B6A8E30D1BD63181003F5C3F /* main.m */,
+				B6A8E3291BD6352B003F5C3F /* AppDelegate.h */,
+				B6A8E32A1BD6352B003F5C3F /* AppDelegate.m */,
+				B6A8E32B1BD6352B003F5C3F /* Info.plist */,
+				B6A8E32C1BD6352B003F5C3F /* main.m */,
+				B6A8E32D1BD6352B003F5C3F /* Planner-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B6A8E3391BD6352B003F5C3F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B6A8E3411BD6352B003F5C3F /* EmptySegue */,
+				B6A8E3441BD6352B003F5C3F /* MessageBarStyleSheet */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		B6A8E3411BD6352B003F5C3F /* EmptySegue */ = {
+			isa = PBXGroup;
+			children = (
+				B6A8E3421BD6352B003F5C3F /* EmptySegue.h */,
+				B6A8E3431BD6352B003F5C3F /* EmptySegue.m */,
+			);
+			path = EmptySegue;
+			sourceTree = "<group>";
+		};
+		B6A8E3441BD6352B003F5C3F /* MessageBarStyleSheet */ = {
+			isa = PBXGroup;
+			children = (
+				B6A8E3451BD6352B003F5C3F /* MessageBarStyleSheet.h */,
+				B6A8E3461BD6352B003F5C3F /* MessageBarStyleSheet.m */,
+			);
+			path = MessageBarStyleSheet;
+			sourceTree = "<group>";
+		};
+		B6A8E3761BD6352B003F5C3F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6A8E3771BD6352B003F5C3F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6A8E3781BD6352B003F5C3F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B6A8E3791BD6352B003F5C3F /* SBMain.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B6A8E37A1BD6352B003F5C3F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B6A8E37B1BD6352B003F5C3F /* Constants.h */,
+				B6A8E37C1BD6352B003F5C3F /* Constants.m */,
+				B6A8E37D1BD6352B003F5C3F /* Utility.h */,
+				B6A8E37E1BD6352B003F5C3F /* Utility.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B6A8E3C51BD63B4B003F5C3F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B6A8E3C61BD63B4B003F5C3F /* Accounts */,
+				B6A8E3C91BD63B4B003F5C3F /* Charts */,
+				B6A8E3CC1BD63B4B003F5C3F /* Expenses */,
+				B6A8E3CF1BD63B4B003F5C3F /* Incomes */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B6A8E3C61BD63B4B003F5C3F /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				B6A8E3C71BD63B4B003F5C3F /* Controllers */,
+				B6A8E3C81BD63B4B003F5C3F /* Views */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		B6A8E3C71BD63B4B003F5C3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6C8E07D1BD662650076E6FF /* VCAccounts.h */,
+				B6C8E07E1BD662650076E6FF /* VCAccounts.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B6A8E3C81BD63B4B003F5C3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6A8E3C91BD63B4B003F5C3F /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				B6A8E3CA1BD63B4B003F5C3F /* Controllers */,
+				B6A8E3CB1BD63B4B003F5C3F /* Views */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		B6A8E3CA1BD63B4B003F5C3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6C8E0801BD662870076E6FF /* VCCharts.h */,
+				B6C8E0811BD662870076E6FF /* VCCharts.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B6A8E3CB1BD63B4B003F5C3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6A8E3CC1BD63B4B003F5C3F /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				B6A8E3CD1BD63B4B003F5C3F /* Controllers */,
+				B6A8E3CE1BD63B4B003F5C3F /* Views */,
+			);
+			path = Expenses;
+			sourceTree = "<group>";
+		};
+		B6A8E3CD1BD63B4B003F5C3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6C8E0831BD662DB0076E6FF /* VCExpenses.h */,
+				B6C8E0841BD662DB0076E6FF /* VCExpenses.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B6A8E3CE1BD63B4B003F5C3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6A8E3CF1BD63B4B003F5C3F /* Incomes */ = {
+			isa = PBXGroup;
+			children = (
+				B6A8E3D01BD63B4B003F5C3F /* Controllers */,
+				B6A8E3D11BD63B4B003F5C3F /* Views */,
+			);
+			path = Incomes;
+			sourceTree = "<group>";
+		};
+		B6A8E3D01BD63B4B003F5C3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6C8E0861BD662ED0076E6FF /* VCIncomes.h */,
+				B6C8E0871BD662ED0076E6FF /* VCIncomes.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B6A8E3D11BD63B4B003F5C3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6C8E07A1BD65FE90076E6FF /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B6C8E07C1BD660240076E6FF /* DataModels */,
+				B6C8E07B1BD6600A0076E6FF /* DataManager */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		B6C8E07B1BD6600A0076E6FF /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		B6C8E07C1BD660240076E6FF /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,9 +320,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6A8E3231BD63181003F5C3F /* Build configuration list for PBXNativeTarget "Planner" */;
 			buildPhases = (
+				23B34B71AA3B8480887AA431 /* Check Pods Manifest.lock */,
 				B6A8E3051BD63181003F5C3F /* Sources */,
 				B6A8E3061BD63181003F5C3F /* Frameworks */,
 				B6A8E3071BD63181003F5C3F /* Resources */,
+				A14397954309079E30B671D6 /* Embed Pods Frameworks */,
+				951347046F1A957481C2BEC5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,46 +373,80 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A8E31F1BD63181003F5C3F /* LaunchScreen.storyboard in Resources */,
-				B6A8E31C1BD63181003F5C3F /* Assets.xcassets in Resources */,
-				B6A8E31A1BD63181003F5C3F /* Main.storyboard in Resources */,
+				B6A8E39C1BD6352B003F5C3F /* SBMain.storyboard in Resources */,
+				B6A8E39B1BD6352B003F5C3F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23B34B71AA3B8480887AA431 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		951347046F1A957481C2BEC5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Planner/Pods-Planner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A14397954309079E30B671D6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Planner/Pods-Planner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6A8E3051BD63181003F5C3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A8E3171BD63181003F5C3F /* SecondViewController.m in Sources */,
-				B6A8E3111BD63181003F5C3F /* AppDelegate.m in Sources */,
-				B6A8E3141BD63181003F5C3F /* FirstViewController.m in Sources */,
-				B6A8E30E1BD63181003F5C3F /* main.m in Sources */,
+				B6A8E3811BD6352B003F5C3F /* main.m in Sources */,
+				B6C8E07F1BD662650076E6FF /* VCAccounts.m in Sources */,
+				B6A8E39E1BD6352B003F5C3F /* Utility.m in Sources */,
+				B6C8E0881BD662ED0076E6FF /* VCIncomes.m in Sources */,
+				B6C8E0821BD662870076E6FF /* VCCharts.m in Sources */,
+				B6A8E3891BD6352B003F5C3F /* EmptySegue.m in Sources */,
+				B6A8E39D1BD6352B003F5C3F /* Constants.m in Sources */,
+				B6A8E38A1BD6352B003F5C3F /* MessageBarStyleSheet.m in Sources */,
+				B6C8E0851BD662DB0076E6FF /* VCExpenses.m in Sources */,
+				B6A8E37F1BD6352B003F5C3F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B6A8E3181BD63181003F5C3F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6A8E3191BD63181003F5C3F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B6A8E31D1BD63181003F5C3F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6A8E31E1BD63181003F5C3F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B6A8E3211BD63181003F5C3F /* Debug */ = {
@@ -219,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -256,7 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -265,9 +531,15 @@
 		};
 		B6A8E3241BD63181003F5C3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA24A4124E03C13123460E3D /* Pods-Planner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Planner/Info.plist;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Planner/Application/Planner-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Planner/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.umair.Planner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,9 +548,15 @@
 		};
 		B6A8E3251BD63181003F5C3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDFFA26693D6C996CB14F01C /* Pods-Planner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Planner/Info.plist;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Planner/Application/Planner-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Planner/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.umair.Planner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +582,7 @@
 				B6A8E3251BD63181003F5C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

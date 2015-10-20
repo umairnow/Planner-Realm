@@ -1,0 +1,13 @@
+PODS:
+  - DCKeyValueObjectMapping (1.5)
+  - TWMessageBarManager (1.7.2)
+
+DEPENDENCIES:
+  - DCKeyValueObjectMapping
+  - TWMessageBarManager
+
+SPEC CHECKSUMS:
+  DCKeyValueObjectMapping: c2eb5a6529da100b2e49ef6a599663578051f077
+  TWMessageBarManager: e7adc066ee425174f5dee79473fce913b1cd1662
+
+COCOAPODS: 0.39.0
