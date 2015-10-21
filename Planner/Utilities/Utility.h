@@ -10,7 +10,7 @@
 
 #define utility [Utility sharedInstance]
 
-@interface SRUtility : NSObject
+@interface Utility : NSObject
 
 /**
  * singleton method
@@ -21,5 +21,10 @@
  * show error message
  **/
 - (void)showErrorMessageBarWithTitle:(NSString *)title andMessage:(NSString *)message;
+
+/**
+ * Set default Realm
+ **/
+- (void)setDefaultRealm;
 
 @end

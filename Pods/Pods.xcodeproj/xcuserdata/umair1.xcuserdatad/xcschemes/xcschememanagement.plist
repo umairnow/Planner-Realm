@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TPKeyboardAvoiding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TWMessageBarManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2A1ABB1880402651E5FC123697FD1356</key>
+		<key>71C27182E4A7BAF1095B784481F10F34</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>60BF1C786BF51D350728CF7A3E6B9E1D</key>
+		<key>8FAC528BAA5BB1C462DE527B9ACC66D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E7AE95E370648A4160F9AD59914AACFD</key>
+		<key>D6E2A640035AC00D2C7334E33391F799</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC33C63CB9FE73A1D90A74155A80B00A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

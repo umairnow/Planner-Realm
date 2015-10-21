@@ -15,4 +15,9 @@
  **/
 + (NSInteger)addAndGetForClass:(Class)className;
 
+/**
+ * Register a class and return an last value based on this method call
+ **/
++ (NSInteger)getLastValue:(Class)className;
+
 @end

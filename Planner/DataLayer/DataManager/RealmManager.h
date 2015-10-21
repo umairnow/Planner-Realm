@@ -8,12 +8,15 @@
 
 #import <Realm/Realm.h>
 #import "TransactionCategories.h"
+#import "BankAccount.h"
 
 @interface RealmManager : NSObject
 
 @property (strong, nonatomic) RLMArray<TransactionCategories *> *transactionsCategories;
 
-
 - (RLMResults *)getAllIncomes;
 - (RLMResults *)getAllExpenses;
+- (BankAccount *)getAccountInfo;
+
+- (void)saveAccount:(BankAccount *)bankAccount;
 @end

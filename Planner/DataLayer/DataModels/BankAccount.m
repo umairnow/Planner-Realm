@@ -10,9 +10,18 @@
 
 @implementation BankAccount
 
++ (NSString *)primaryKey {
+    return @"accountId";
+}
+
++ (NSDictionary *)defaultPropertyValues
+{
+    return @{@"accountId": @(1)};
+}
+
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"BankAccount description:%@\n accountTitle: %@\naccountNumber: %@\nbankName: %@\nbranchName: %@\nbranchCode: %@\nbranchAddress: %@\namount: %@\n",[super description], self.accountTitle, self.accountNumber, self.bankName, self.branchName, self.branchCode, self.branchAddress, self.amount];
+    return [NSString stringWithFormat:@"BankAccount description:%@\n accountTitle: %@\naccountNumber: %@\nbankName: %@\nbranchName: %@\nbranchCode: %@\nbranchAddress: %@\nbalance: %@\n",[super description], self.accountTitle, self.accountNumber, self.bankName, self.branchName, self.branchCode, self.branchAddress, self.balance];
 }
 
 - (void)dealloc
@@ -23,7 +32,7 @@
     self.branchName = nil;
     self.branchCode = nil;
     self.branchAddress = nil;
-    self.amount = nil;
+    self.balance = nil;
 }
 
 @end

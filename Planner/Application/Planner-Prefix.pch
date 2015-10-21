@@ -20,6 +20,8 @@
 #import <Foundation/Foundation.h>
 #import "Utility.h"
 #import "Constants.h"
+
+#import "RealmManager.h"
 #import "NSObject+AutoIncrementNumber.h"
 #endif
 

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0331D02ADC6657BCF468D0DD'
-               BlueprintName = 'Pods-Planner'
+               BlueprintIdentifier = '1A5303AAAF0E3709836E0F5E'
+               BlueprintName = 'TPKeyboardAvoiding'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-Planner.a'>
+               BuildableName = 'libTPKeyboardAvoiding.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
