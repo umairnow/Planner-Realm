@@ -2,7 +2,7 @@
 platform :ios, '7.0'
 
 target 'Planner' do
-pod 'DCKeyValueObjectMapping'
-pod 'TWMessageBarManager'
+    pod 'Realm'
+    pod 'TWMessageBarManager'
 end
 

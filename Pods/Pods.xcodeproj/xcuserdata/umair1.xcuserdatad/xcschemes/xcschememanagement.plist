@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DCKeyValueObjectMapping.xcscheme</key>
+		<key>Pods-Planner.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Planner.xcscheme</key>
+		<key>Realm.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>247DB4C3B3EE3A82935FBD06D21C12FB</key>
+		<key>2A1ABB1880402651E5FC123697FD1356</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>73846855A8CB5C1EF8399E08B644C3F2</key>
+		<key>60BF1C786BF51D350728CF7A3E6B9E1D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>73D0B351159648F654FC617CE8A8E191</key>
+		<key>E7AE95E370648A4160F9AD59914AACFD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

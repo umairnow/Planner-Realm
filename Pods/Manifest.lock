@@ -1,13 +1,15 @@
 PODS:
-  - DCKeyValueObjectMapping (1.5)
+  - Realm (0.96.0):
+    - Realm/Headers (= 0.96.0)
+  - Realm/Headers (0.96.0)
   - TWMessageBarManager (1.7.2)
 
 DEPENDENCIES:
-  - DCKeyValueObjectMapping
+  - Realm
   - TWMessageBarManager
 
 SPEC CHECKSUMS:
-  DCKeyValueObjectMapping: c2eb5a6529da100b2e49ef6a599663578051f077
+  Realm: d1b1eff5264cd6a3158b7a9b6c499d7f6ad3a860
   TWMessageBarManager: e7adc066ee425174f5dee79473fce913b1cd1662
 
 COCOAPODS: 0.39.0

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B69F610D1BD6C2BE00B166A3 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F610C1BD6C2BE00B166A3 /* Transaction.m */; settings = {ASSET_TAGS = (); }; };
+		B69F61101BD6C2DF00B166A3 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F610F1BD6C2DF00B166A3 /* BankAccount.m */; settings = {ASSET_TAGS = (); }; };
+		B69F61161BD6C79700B166A3 /* RealmManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F61151BD6C79700B166A3 /* RealmManager.m */; settings = {ASSET_TAGS = (); }; };
 		B6A8E37F1BD6352B003F5C3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E32A1BD6352B003F5C3F /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		B6A8E3811BD6352B003F5C3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E32C1BD6352B003F5C3F /* main.m */; settings = {ASSET_TAGS = (); }; };
 		B6A8E3891BD6352B003F5C3F /* EmptySegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E3431BD6352B003F5C3F /* EmptySegue.m */; settings = {ASSET_TAGS = (); }; };
@@ -15,6 +18,8 @@
 		B6A8E39C1BD6352B003F5C3F /* SBMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A8E3791BD6352B003F5C3F /* SBMain.storyboard */; settings = {ASSET_TAGS = (); }; };
 		B6A8E39D1BD6352B003F5C3F /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E37C1BD6352B003F5C3F /* Constants.m */; settings = {ASSET_TAGS = (); }; };
 		B6A8E39E1BD6352B003F5C3F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E37E1BD6352B003F5C3F /* Utility.m */; settings = {ASSET_TAGS = (); }; };
+		B6BEE2F31BD75AE200E62529 /* TransactionCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BEE2F21BD75AE200E62529 /* TransactionCategories.m */; settings = {ASSET_TAGS = (); }; };
+		B6BEE2F71BD764E400E62529 /* NSObject+AutoIncrementNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BEE2F61BD764E400E62529 /* NSObject+AutoIncrementNumber.m */; settings = {ASSET_TAGS = (); }; };
 		B6C8E07F1BD662650076E6FF /* VCAccounts.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E07E1BD662650076E6FF /* VCAccounts.m */; settings = {ASSET_TAGS = (); }; };
 		B6C8E0821BD662870076E6FF /* VCCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E0811BD662870076E6FF /* VCCharts.m */; settings = {ASSET_TAGS = (); }; };
 		B6C8E0851BD662DB0076E6FF /* VCExpenses.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E0841BD662DB0076E6FF /* VCExpenses.m */; settings = {ASSET_TAGS = (); }; };
@@ -24,6 +29,12 @@
 
 /* Begin PBXFileReference section */
 		AA24A4124E03C13123460E3D /* Pods-Planner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Planner/Pods-Planner.debug.xcconfig"; sourceTree = "<group>"; };
+		B69F610B1BD6C2BE00B166A3 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		B69F610C1BD6C2BE00B166A3 /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		B69F610E1BD6C2DF00B166A3 /* BankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
+		B69F610F1BD6C2DF00B166A3 /* BankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
+		B69F61141BD6C79700B166A3 /* RealmManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmManager.h; sourceTree = "<group>"; };
+		B69F61151BD6C79700B166A3 /* RealmManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmManager.m; sourceTree = "<group>"; };
 		B6A8E3091BD63181003F5C3F /* Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A8E3291BD6352B003F5C3F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6A8E32A1BD6352B003F5C3F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,6 +51,10 @@
 		B6A8E37C1BD6352B003F5C3F /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		B6A8E37D1BD6352B003F5C3F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		B6A8E37E1BD6352B003F5C3F /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		B6BEE2F11BD75AE200E62529 /* TransactionCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionCategories.h; sourceTree = "<group>"; };
+		B6BEE2F21BD75AE200E62529 /* TransactionCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionCategories.m; sourceTree = "<group>"; };
+		B6BEE2F51BD764E400E62529 /* NSObject+AutoIncrementNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoIncrementNumber.h"; sourceTree = "<group>"; };
+		B6BEE2F61BD764E400E62529 /* NSObject+AutoIncrementNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoIncrementNumber.m"; sourceTree = "<group>"; };
 		B6C8E07D1BD662650076E6FF /* VCAccounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCAccounts.h; sourceTree = "<group>"; };
 		B6C8E07E1BD662650076E6FF /* VCAccounts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCAccounts.m; sourceTree = "<group>"; };
 		B6C8E0801BD662870076E6FF /* VCCharts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCharts.h; sourceTree = "<group>"; };
@@ -102,8 +117,8 @@
 		B6A8E30B1BD63181003F5C3F /* Planner */ = {
 			isa = PBXGroup;
 			children = (
-				B6C8E07A1BD65FE90076E6FF /* DataLayer */,
 				B6A8E3281BD6352B003F5C3F /* Application */,
+				B6C8E07A1BD65FE90076E6FF /* DataLayer */,
 				B6A8E3391BD6352B003F5C3F /* Libraries */,
 				B6A8E3C51BD63B4B003F5C3F /* Modules */,
 				B6A8E3761BD6352B003F5C3F /* Resources */,
@@ -128,6 +143,7 @@
 		B6A8E3391BD6352B003F5C3F /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				B6BEE2F41BD764A000E62529 /* AutoIncrement */,
 				B6A8E3411BD6352B003F5C3F /* EmptySegue */,
 				B6A8E3441BD6352B003F5C3F /* MessageBarStyleSheet */,
 			);
@@ -290,6 +306,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B6BEE2F41BD764A000E62529 /* AutoIncrement */ = {
+			isa = PBXGroup;
+			children = (
+				B6BEE2F51BD764E400E62529 /* NSObject+AutoIncrementNumber.h */,
+				B6BEE2F61BD764E400E62529 /* NSObject+AutoIncrementNumber.m */,
+			);
+			path = AutoIncrement;
+			sourceTree = "<group>";
+		};
 		B6C8E07A1BD65FE90076E6FF /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +327,8 @@
 		B6C8E07B1BD6600A0076E6FF /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				B69F61141BD6C79700B166A3 /* RealmManager.h */,
+				B69F61151BD6C79700B166A3 /* RealmManager.m */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -309,6 +336,12 @@
 		B6C8E07C1BD660240076E6FF /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
+				B69F610B1BD6C2BE00B166A3 /* Transaction.h */,
+				B69F610C1BD6C2BE00B166A3 /* Transaction.m */,
+				B69F610E1BD6C2DF00B166A3 /* BankAccount.h */,
+				B69F610F1BD6C2DF00B166A3 /* BankAccount.m */,
+				B6BEE2F11BD75AE200E62529 /* TransactionCategories.h */,
+				B6BEE2F21BD75AE200E62529 /* TransactionCategories.m */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -434,10 +467,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6A8E3811BD6352B003F5C3F /* main.m in Sources */,
+				B69F61101BD6C2DF00B166A3 /* BankAccount.m in Sources */,
 				B6C8E07F1BD662650076E6FF /* VCAccounts.m in Sources */,
+				B69F61161BD6C79700B166A3 /* RealmManager.m in Sources */,
+				B6BEE2F71BD764E400E62529 /* NSObject+AutoIncrementNumber.m in Sources */,
 				B6A8E39E1BD6352B003F5C3F /* Utility.m in Sources */,
 				B6C8E0881BD662ED0076E6FF /* VCIncomes.m in Sources */,
+				B6BEE2F31BD75AE200E62529 /* TransactionCategories.m in Sources */,
 				B6C8E0821BD662870076E6FF /* VCCharts.m in Sources */,
+				B69F610D1BD6C2BE00B166A3 /* Transaction.m in Sources */,
 				B6A8E3891BD6352B003F5C3F /* EmptySegue.m in Sources */,
 				B6A8E39D1BD6352B003F5C3F /* Constants.m in Sources */,
 				B6A8E38A1BD6352B003F5C3F /* MessageBarStyleSheet.m in Sources */,
