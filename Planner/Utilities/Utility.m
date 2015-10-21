@@ -71,15 +71,4 @@
     return [NSURL fileURLWithPath:[self directoryPath] isDirectory:YES];
 }
 
-#pragma mark - Realm Configurations
-
-- (void)setDefaultRealm {
-    RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
-    // Use the default directory, but replace the filename with the username
-    config.path = [[[config.path stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"Planner"] stringByAppendingPathExtension:@"realm"];
-    // Set this as the configuration used for the default Realm
-    [RLMRealmConfiguration setDefaultConfiguration:config];
-}
-
-
 @end

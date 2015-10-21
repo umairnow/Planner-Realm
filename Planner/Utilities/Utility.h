@@ -22,9 +22,4 @@
  **/
 - (void)showErrorMessageBarWithTitle:(NSString *)title andMessage:(NSString *)message;
 
-/**
- * Set default Realm
- **/
-- (void)setDefaultRealm;
-
 @end

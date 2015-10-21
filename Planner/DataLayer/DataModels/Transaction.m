@@ -29,12 +29,5 @@
     return [NSString stringWithFormat:@"Transaction description:%@\n transactionValue: %@\ntransactionDate: %@\nupdatedDate: %@\ntransactionCategory: %@",[super description], self.transactionValue, self.transactionDate, self.updatedDate, self.category];
 }
 
-- (void)dealloc
-{
-    self.transactionValue = nil;
-    self.transactionDate = nil;
-    self.updatedDate = nil;
-}
-
 
 @end

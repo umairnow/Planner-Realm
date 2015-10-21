@@ -24,15 +24,4 @@
     return [NSString stringWithFormat:@"BankAccount description:%@\n accountTitle: %@\naccountNumber: %@\nbankName: %@\nbranchName: %@\nbranchCode: %@\nbranchAddress: %@\nbalance: %@\n",[super description], self.accountTitle, self.accountNumber, self.bankName, self.branchName, self.branchCode, self.branchAddress, self.balance];
 }
 
-- (void)dealloc
-{
-    self.accountTitle = nil;
-    self.accountNumber = nil;
-    self.bankName = nil;
-    self.branchName = nil;
-    self.branchCode = nil;
-    self.branchAddress = nil;
-    self.balance = nil;
-}
-
 @end

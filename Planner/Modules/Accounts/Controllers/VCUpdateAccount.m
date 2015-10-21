@@ -60,6 +60,8 @@
     self.bankAccount.branchAddress = tfBranchAddress.text;
     
     [self.realmManager saveAccount:self.bankAccount];
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end
