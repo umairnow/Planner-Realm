@@ -28,4 +28,19 @@
  **/
 - (RLMArray<TransactionCategory *> *)convertToArray:(RLMResults<TransactionCategory *> *)results;
 
+/**
+ * Calculate and return the monthly and yearly amount on recurring and non recurring basis
+ **/
+- (double)calculateAmountMonthly:(BOOL)isMonthly from:(TransactionCategory *)transactionCategory;
+
+/**
+ * Return total yearly amount on basis of recurring and non recurring
+ **/
+- (double)totalYearlyRecurring:(BOOL)isRecurring fromResults:(RLMResults *)results;
+
+/**
+ * Return total monthly amount on basis of recurring and non recurring
+ **/
+- (double)totalMonthlyRecurring:(BOOL)isRecurring fromResults:(RLMResults *)results;
+
 @end

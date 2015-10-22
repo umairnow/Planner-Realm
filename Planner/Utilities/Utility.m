@@ -71,10 +71,34 @@
     return [NSURL fileURLWithPath:[self directoryPath] isDirectory:YES];
 }
 
+#pragma mark - Database Related Methods
+
 - (RLMArray<TransactionCategory *> *)convertToArray:(RLMResults<TransactionCategory *> *)results {
     RLMArray<TransactionCategory *> *resultArray = [[RLMArray alloc] initWithObjectClassName:@"TransactionCategory"];
     [resultArray addObjects:results];
     return resultArray;
+}
+
+- (double)calculateAmountMonthly:(BOOL)isMonthly from:(TransactionCategory *)transactionCategory {
+    if (!transactionCategory.isRecurring.boolValue) {
+        return isMonthly?(transactionCategory.transactionValue.doubleValue/12):(transactionCategory.transactionValue.doubleValue);
+    } else {
+        return isMonthly?(transactionCategory.transactionValue.doubleValue):(transactionCategory.transactionValue.doubleValue*12);
+    }
+}
+
+- (double)totalYearlyRecurring:(BOOL)isRecurring fromResults:(RLMResults *)results {
+    if (isRecurring) {
+        return [results sumOfProperty:@"transactionValue"].doubleValue * 12;
+    }
+    return [results sumOfProperty:@"transactionValue"].doubleValue;
+}
+
+- (double)totalMonthlyRecurring:(BOOL)isRecurring fromResults:(RLMResults *)results {
+    if (isRecurring) {
+        return [results sumOfProperty:@"transactionValue"].doubleValue;
+    }
+    return [results sumOfProperty:@"transactionValue"].doubleValue / 12;
 }
 
 @end

@@ -34,12 +34,31 @@
 #pragma mark - Get Data
 
 - (RLMResults<TransactionCategory *> *)getAllIncomes {
-    RLMResults<TransactionCategory *> *results = [[TransactionCategory objectsWhere:@"isIncome = 1"] sortedResultsUsingProperty:@"name" ascending:NO];
-    return results;
+    return [self getTransactionsWhere:@"isIncome = 1"];
 }
 
 - (RLMResults<TransactionCategory *> *)getAllExpenses {
-    RLMResults<TransactionCategory *> *results = [[TransactionCategory objectsWhere:@"isIncome = 0"] sortedResultsUsingProperty:@"name" ascending:NO];
+    return [self getTransactionsWhere:@"isIncome = 0"];
+}
+
+- (RLMResults<TransactionCategory *> *)recurringIncomes {
+    return [self getTransactionsWhere:@"isIncome = 1 AND isRecurring = 1"];
+}
+
+- (RLMResults<TransactionCategory *> *)nonRecurringIncomes {
+    return [self getTransactionsWhere:@"isIncome = 1 AND isRecurring = 0"];
+}
+
+- (RLMResults<TransactionCategory *> *)recurringExpenses {
+    return [self getTransactionsWhere:@"isIncome = 0 AND isRecurring = 1"];
+}
+
+- (RLMResults<TransactionCategory *> *)nonRecurringExpenses {
+    return [self getTransactionsWhere:@"isIncome = 0 AND isRecurring = 0"];
+}
+
+- (RLMResults<TransactionCategory *> *)getTransactionsWhere:(NSString *)where {
+    RLMResults<TransactionCategory *> *results = [[TransactionCategory objectsWhere:where] sortedResultsUsingProperty:@"name" ascending:NO];
     return results;
 }
 

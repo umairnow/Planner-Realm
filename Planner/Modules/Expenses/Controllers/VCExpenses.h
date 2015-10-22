@@ -11,6 +11,7 @@
 @interface VCExpenses : VCIncomes {
     
     __weak IBOutlet UILabel *lblExpenses;
+    __weak IBOutlet UILabel *lblExpensesYearly;
 }
 
 @end

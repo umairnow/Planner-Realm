@@ -12,8 +12,39 @@
 
 @interface RealmManager : NSObject
 
+/**
+ * Get All Incomes
+ **/
 - (RLMResults<TransactionCategory *> *)getAllIncomes;
+
+/**
+ * Get All Expenses
+ **/
 - (RLMResults<TransactionCategory *> *)getAllExpenses;
+
+/**
+ * Get All Recurring Incomes
+ **/
+- (RLMResults<TransactionCategory *> *)recurringIncomes;
+
+/**
+ * Get All Non Recurring Incomes
+ **/
+- (RLMResults<TransactionCategory *> *)nonRecurringIncomes;
+
+/**
+ * Get All Recurring Expenses
+ **/
+- (RLMResults<TransactionCategory *> *)recurringExpenses;
+
+/**
+ * Get All Non Recurring Expenses
+ **/
+- (RLMResults<TransactionCategory *> *)nonRecurringExpenses;
+
+/**
+ * Get Account Information
+ **/
 - (BankAccount *)getAccountInfo;
 
 /**

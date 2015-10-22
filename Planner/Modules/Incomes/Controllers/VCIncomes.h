@@ -13,6 +13,7 @@
 @interface VCIncomes : UITableViewController <MGSwipeTableCellDelegate> {
     
     __weak IBOutlet UILabel *lblIncomes;
+    __weak IBOutlet UILabel *lblIncomesYearly;
 }
 
 @property (strong, nonatomic) RLMArray<TransactionCategory *> *transactionCategories;

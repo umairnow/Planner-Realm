@@ -17,14 +17,16 @@
 #pragma mark - Helping Methods
 
 - (void)loadTransactions {
-    RLMResults *results = [self.realmManager getAllExpenses];
-    self.transactionCategories = [utility convertToArray:results];
+    self.transactionCategories = [utility convertToArray:[self.realmManager getAllExpenses]];
     [self.tableView reloadData];
     [self updateSum];
 }
 
 - (void)updateSum {
-    lblExpenses.text = [NSString stringWithFormat:@"%@", [[self.realmManager getAllExpenses] sumOfProperty:@"transactionValue"]];
+    double totalMonthly = [utility totalMonthlyRecurring:YES fromResults:[self.realmManager recurringExpenses]] + [utility totalMonthlyRecurring:NO fromResults:[self.realmManager nonRecurringExpenses]];
+    lblExpenses.text = [NSString stringWithFormat:@"%.1f", totalMonthly];
+    double totalYearly = [utility totalYearlyRecurring:YES fromResults:[self.realmManager recurringExpenses]] + [utility totalYearlyRecurring:NO fromResults:[self.realmManager nonRecurringExpenses]];
+    lblExpensesYearly.text = [NSString stringWithFormat:@"%.1f", totalYearly];
 }
 
 #pragma mark - Action Handlers

@@ -17,6 +17,8 @@
 
 @implementation VCIncomes
 
+static NSString *const CellIdentifier = @"TransactionCell";
+
 #pragma mark - Life Cycle
 
 - (void)viewDidLoad {
@@ -37,14 +39,16 @@
 }
 
 - (void)loadTransactions {
-    RLMResults *results = [self.realmManager getAllIncomes];
-    self.transactionCategories = [utility convertToArray:results];
+    self.transactionCategories = [utility convertToArray:[self.realmManager getAllIncomes]];
     [self.tableView reloadData];
     [self updateSum];
 }
 
 - (void)updateSum {
-    lblIncomes.text = [NSString stringWithFormat:@"%@", [[self.realmManager getAllIncomes] sumOfProperty:@"transactionValue"]];
+    double totalMonthly = [utility totalMonthlyRecurring:YES fromResults:[self.realmManager recurringIncomes]] + [utility totalMonthlyRecurring:NO fromResults:[self.realmManager nonRecurringIncomes]];
+    lblIncomes.text = [NSString stringWithFormat:@"%.1f", totalMonthly];
+    double totalYearly = [utility totalYearlyRecurring:YES fromResults:[self.realmManager recurringIncomes]] + [utility totalYearlyRecurring:NO fromResults:[self.realmManager nonRecurringIncomes]];
+    lblIncomesYearly.text = [NSString stringWithFormat:@"%.1f", totalYearly];
 }
 
 #pragma mark - Table view data source
@@ -53,17 +57,33 @@
     return self.transactionCategories.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    MGSwipeTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"IncomesCellIdentifier" forIndexPath:indexPath];
+    MGSwipeTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     cell.rightButtons = @[[MGSwipeButton buttonWithTitle:@"Delete" backgroundColor:[UIColor redColor]],
                           [MGSwipeButton buttonWithTitle:@"Update" backgroundColor:[UIColor blueColor]]];
     cell.rightSwipeSettings.transition = MGSwipeTransition3D;
     cell.delegate = self;
     TransactionCategory *transactionCategory = self.transactionCategories[indexPath.row];
     cell.textLabel.text = transactionCategory.name;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", transactionCategory.transactionValue];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Monthly: %.1f\n Yearly: %.1f", [utility calculateAmountMonthly:YES from:transactionCategory], [utility calculateAmountMonthly:NO from:transactionCategory]];
     return cell;
+}
+
+#pragma mark - Table view delegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static MGSwipeTableCell *sizingCell = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sizingCell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    });
+    TransactionCategory *transactionCategory = self.transactionCategories[indexPath.row];
+    sizingCell.textLabel.text = transactionCategory.name;
+    sizingCell.detailTextLabel.text = [NSString stringWithFormat:@"Monthly: %.1f\n Yearly: %.1f", [utility calculateAmountMonthly:YES from:transactionCategory], [utility calculateAmountMonthly:NO from:transactionCategory]];
+    [sizingCell setNeedsLayout];
+    [sizingCell layoutIfNeeded];
+    CGFloat height = [sizingCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    return height;
 }
 
 #pragma mark - MGSwipeTableCell Delegate
