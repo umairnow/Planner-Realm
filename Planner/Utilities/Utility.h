@@ -39,6 +39,11 @@
 - (double)totalYearlyRecurring:(BOOL)isRecurring fromResults:(RLMResults *)results;
 
 /**
+ * Return total amount for given on basis of recurring and non recurring
+ **/
+- (double)totalRecurring:(BOOL)isRecurring forMonths:(NSInteger)months fromResults:(RLMResults *)results;
+
+/**
  * Return total monthly amount on basis of recurring and non recurring
  **/
 - (double)totalMonthlyRecurring:(BOOL)isRecurring fromResults:(RLMResults *)results;

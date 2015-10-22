@@ -88,8 +88,12 @@
 }
 
 - (double)totalYearlyRecurring:(BOOL)isRecurring fromResults:(RLMResults *)results {
+    return [self totalRecurring:isRecurring forMonths:12 fromResults:results];
+}
+
+- (double)totalRecurring:(BOOL)isRecurring forMonths:(NSInteger)months fromResults:(RLMResults *)results {
     if (isRecurring) {
-        return [results sumOfProperty:@"transactionValue"].doubleValue * 12;
+        return [results sumOfProperty:@"transactionValue"].doubleValue * months;
     }
     return [results sumOfProperty:@"transactionValue"].doubleValue;
 }

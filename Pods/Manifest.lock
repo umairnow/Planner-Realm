@@ -1,21 +1,30 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.0.3)
   - MGSwipeTableCell (1.5.1)
+  - PNChart (0.8.7):
+    - UICountingLabel (~> 1.2.0)
   - Realm (0.96.0):
     - Realm/Headers (= 0.96.0)
   - Realm/Headers (0.96.0)
   - TPKeyboardAvoiding (1.2.10)
   - TWMessageBarManager (1.7.2)
+  - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0
   - MGSwipeTableCell
+  - PNChart
   - Realm
   - TPKeyboardAvoiding
   - TWMessageBarManager
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 11f2053085d3088dc1ef9d38a9f11c18b528dd9e
   MGSwipeTableCell: a51fa670c01f0aa048f12af040acebf315223137
+  PNChart: c1755716bbd45386d2035b2bf2ce73e6d3f8cb22
   Realm: d1b1eff5264cd6a3158b7a9b6c499d7f6ad3a860
   TPKeyboardAvoiding: 614ebec846ec28b83d548769297fa5fb56468904
   TWMessageBarManager: e7adc066ee425174f5dee79473fce913b1cd1662
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
 COCOAPODS: 0.39.0

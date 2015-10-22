@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		B63244B01BD8CD3F006B4123 /* VCAddExpense.m in Sources */ = {isa = PBXBuildFile; fileRef = B63244AF1BD8CD3F006B4123 /* VCAddExpense.m */; settings = {ASSET_TAGS = (); }; };
 		B63244B31BD8CD4E006B4123 /* VCAddIncome.m in Sources */ = {isa = PBXBuildFile; fileRef = B63244B21BD8CD4E006B4123 /* VCAddIncome.m */; settings = {ASSET_TAGS = (); }; };
+		B682A44E1BD96FB800B717A9 /* VCReportsContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B682A44D1BD96FB800B717A9 /* VCReportsContainer.m */; settings = {ASSET_TAGS = (); }; };
+		B682A4511BD9704700B717A9 /* VCAccountsPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = B682A4501BD9704700B717A9 /* VCAccountsPlan.m */; settings = {ASSET_TAGS = (); }; };
+		B682A4541BD9706900B717A9 /* VCCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = B682A4531BD9706900B717A9 /* VCCharts.m */; settings = {ASSET_TAGS = (); }; };
 		B69056A21BD78483003D4244 /* VCUpdateAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = B69056A11BD78483003D4244 /* VCUpdateAccount.m */; settings = {ASSET_TAGS = (); }; };
 		B69056A61BD78734003D4244 /* UATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B69056A51BD78734003D4244 /* UATextField.m */; settings = {ASSET_TAGS = (); }; };
 		B69F61101BD6C2DF00B166A3 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F610F1BD6C2DF00B166A3 /* BankAccount.m */; settings = {ASSET_TAGS = (); }; };
@@ -24,7 +27,7 @@
 		B6BEE2F31BD75AE200E62529 /* TransactionCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BEE2F21BD75AE200E62529 /* TransactionCategory.m */; settings = {ASSET_TAGS = (); }; };
 		B6BEE2F71BD764E400E62529 /* NSObject+AutoIncrementNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BEE2F61BD764E400E62529 /* NSObject+AutoIncrementNumber.m */; settings = {ASSET_TAGS = (); }; };
 		B6C8E07F1BD662650076E6FF /* VCAccounts.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E07E1BD662650076E6FF /* VCAccounts.m */; settings = {ASSET_TAGS = (); }; };
-		B6C8E0821BD662870076E6FF /* VCCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E0811BD662870076E6FF /* VCCharts.m */; settings = {ASSET_TAGS = (); }; };
+		B6C8E0821BD662870076E6FF /* VCReports.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E0811BD662870076E6FF /* VCReports.m */; settings = {ASSET_TAGS = (); }; };
 		B6CF4E9D1BD8ADD30040A930 /* VCIncomes.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CF4E9C1BD8ADD30040A930 /* VCIncomes.m */; settings = {ASSET_TAGS = (); }; };
 		B6CF4EA01BD8ADFB0040A930 /* VCExpenses.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CF4E9F1BD8ADFB0040A930 /* VCExpenses.m */; settings = {ASSET_TAGS = (); }; };
 		F2A43AC687D1FE812ECCFF1B /* libPods-Planner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC58EEDD36D98BDD2125BC2C /* libPods-Planner.a */; };
@@ -36,6 +39,12 @@
 		B63244AF1BD8CD3F006B4123 /* VCAddExpense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCAddExpense.m; sourceTree = "<group>"; };
 		B63244B11BD8CD4E006B4123 /* VCAddIncome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCAddIncome.h; sourceTree = "<group>"; };
 		B63244B21BD8CD4E006B4123 /* VCAddIncome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCAddIncome.m; sourceTree = "<group>"; };
+		B682A44C1BD96FB800B717A9 /* VCReportsContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCReportsContainer.h; sourceTree = "<group>"; };
+		B682A44D1BD96FB800B717A9 /* VCReportsContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCReportsContainer.m; sourceTree = "<group>"; };
+		B682A44F1BD9704700B717A9 /* VCAccountsPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCAccountsPlan.h; sourceTree = "<group>"; };
+		B682A4501BD9704700B717A9 /* VCAccountsPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCAccountsPlan.m; sourceTree = "<group>"; };
+		B682A4521BD9706900B717A9 /* VCCharts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCharts.h; sourceTree = "<group>"; };
+		B682A4531BD9706900B717A9 /* VCCharts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCharts.m; sourceTree = "<group>"; };
 		B69056A01BD78483003D4244 /* VCUpdateAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCUpdateAccount.h; sourceTree = "<group>"; };
 		B69056A11BD78483003D4244 /* VCUpdateAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCUpdateAccount.m; sourceTree = "<group>"; };
 		B69056A41BD78734003D4244 /* UATextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UATextField.h; sourceTree = "<group>"; };
@@ -66,8 +75,8 @@
 		B6BEE2F61BD764E400E62529 /* NSObject+AutoIncrementNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoIncrementNumber.m"; sourceTree = "<group>"; };
 		B6C8E07D1BD662650076E6FF /* VCAccounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCAccounts.h; sourceTree = "<group>"; };
 		B6C8E07E1BD662650076E6FF /* VCAccounts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCAccounts.m; sourceTree = "<group>"; };
-		B6C8E0801BD662870076E6FF /* VCCharts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCharts.h; sourceTree = "<group>"; };
-		B6C8E0811BD662870076E6FF /* VCCharts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCharts.m; sourceTree = "<group>"; };
+		B6C8E0801BD662870076E6FF /* VCReports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCReports.h; sourceTree = "<group>"; };
+		B6C8E0811BD662870076E6FF /* VCReports.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCReports.m; sourceTree = "<group>"; };
 		B6CF4E9B1BD8ADD30040A930 /* VCIncomes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCIncomes.h; sourceTree = "<group>"; };
 		B6CF4E9C1BD8ADD30040A930 /* VCIncomes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCIncomes.m; sourceTree = "<group>"; };
 		B6CF4E9E1BD8ADFB0040A930 /* VCExpenses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCExpenses.h; sourceTree = "<group>"; };
@@ -218,7 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				B6A8E3C61BD63B4B003F5C3F /* Accounts */,
-				B6A8E3C91BD63B4B003F5C3F /* Charts */,
+				B6A8E3C91BD63B4B003F5C3F /* Reports */,
 				B6A8E3CC1BD63B4B003F5C3F /* Expenses */,
 				B6A8E3CF1BD63B4B003F5C3F /* Incomes */,
 			);
@@ -252,20 +261,26 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B6A8E3C91BD63B4B003F5C3F /* Charts */ = {
+		B6A8E3C91BD63B4B003F5C3F /* Reports */ = {
 			isa = PBXGroup;
 			children = (
 				B6A8E3CA1BD63B4B003F5C3F /* Controllers */,
 				B6A8E3CB1BD63B4B003F5C3F /* Views */,
 			);
-			path = Charts;
+			path = Reports;
 			sourceTree = "<group>";
 		};
 		B6A8E3CA1BD63B4B003F5C3F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B6C8E0801BD662870076E6FF /* VCCharts.h */,
-				B6C8E0811BD662870076E6FF /* VCCharts.m */,
+				B6C8E0801BD662870076E6FF /* VCReports.h */,
+				B6C8E0811BD662870076E6FF /* VCReports.m */,
+				B682A44C1BD96FB800B717A9 /* VCReportsContainer.h */,
+				B682A44D1BD96FB800B717A9 /* VCReportsContainer.m */,
+				B682A44F1BD9704700B717A9 /* VCAccountsPlan.h */,
+				B682A4501BD9704700B717A9 /* VCAccountsPlan.m */,
+				B682A4521BD9706900B717A9 /* VCCharts.h */,
+				B682A4531BD9706900B717A9 /* VCCharts.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -493,13 +508,15 @@
 				B69F61101BD6C2DF00B166A3 /* BankAccount.m in Sources */,
 				B6C8E07F1BD662650076E6FF /* VCAccounts.m in Sources */,
 				B69F61161BD6C79700B166A3 /* RealmManager.m in Sources */,
+				B682A4541BD9706900B717A9 /* VCCharts.m in Sources */,
 				B6BEE2F71BD764E400E62529 /* NSObject+AutoIncrementNumber.m in Sources */,
 				B69056A21BD78483003D4244 /* VCUpdateAccount.m in Sources */,
 				B6CF4EA01BD8ADFB0040A930 /* VCExpenses.m in Sources */,
 				B6A8E39E1BD6352B003F5C3F /* Utility.m in Sources */,
 				B6BEE2F31BD75AE200E62529 /* TransactionCategory.m in Sources */,
 				B69056A61BD78734003D4244 /* UATextField.m in Sources */,
-				B6C8E0821BD662870076E6FF /* VCCharts.m in Sources */,
+				B682A44E1BD96FB800B717A9 /* VCReportsContainer.m in Sources */,
+				B6C8E0821BD662870076E6FF /* VCReports.m in Sources */,
 				B63244B01BD8CD3F006B4123 /* VCAddExpense.m in Sources */,
 				B6A8E3891BD6352B003F5C3F /* EmptySegue.m in Sources */,
 				B6A8E39D1BD6352B003F5C3F /* Constants.m in Sources */,
@@ -507,6 +524,7 @@
 				B6CF4E9D1BD8ADD30040A930 /* VCIncomes.m in Sources */,
 				B6A8E37F1BD6352B003F5C3F /* AppDelegate.m in Sources */,
 				B63244B31BD8CD4E006B4123 /* VCAddIncome.m in Sources */,
+				B682A4511BD9704700B717A9 /* VCAccountsPlan.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
