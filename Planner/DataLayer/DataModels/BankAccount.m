@@ -16,7 +16,7 @@
 
 + (NSDictionary *)defaultPropertyValues
 {
-    return @{@"accountId": @(1)};
+    return @{@"accountId": @([NSObject addAndGetForClass:[self class]])};
 }
 
 - (NSString *)description

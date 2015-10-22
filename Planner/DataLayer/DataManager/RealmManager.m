@@ -63,27 +63,34 @@
 }
 
 - (BankAccount *)getAccountInfo {
-    BankAccount *bankAccount = [BankAccount objectForPrimaryKey:@(1)];
+    BankAccount *bankAccount = [[BankAccount allObjects] lastObject];
     if (!bankAccount) {
         bankAccount = [BankAccount new];
-        bankAccount.currency = @"USD";
-        bankAccount.accountTitle = @"Umair Aamir";
-        bankAccount.accountNumber = @"IPL23439992";
-        bankAccount.bankName = @"Standard Chartered Bank Ltd.";
-        bankAccount.branchName = @"Garden Town Branch";
-        bankAccount.branchAddress = @"Main Boulevard Garden Town Lahore";
-        bankAccount.balance = @(2000);
-        bankAccount.branchCode = @(3299);
-        [self saveAccount:bankAccount];
+        [self saveAccount:bankAccount withParameters:@{@"currency": @"USD",
+                                                       @"accountTitle": @"Umair Aamir",
+                                                       @"accountNumber": @"IPL23439992",
+                                                       @"bankName": @"Standard Chartered Bank Ltd.",
+                                                       @"branchName": @"Garden Town Branch",
+                                                       @"branchAddress": @"Main Boulevard Garden Town Lahore",
+                                                       @"balance": @(2000),
+                                                       @"branchCode": @(3299)}];
     }
     return bankAccount;
 }
 
 #pragma mark - Write Data
 
-- (void)saveAccount:(BankAccount *)bankAccount {
+- (void)saveAccount:(BankAccount *)bankAccount withParameters:(NSDictionary*)paramters {
     [self.realm beginWriteTransaction];
-    [BankAccount createInDefaultRealmWithValue:bankAccount];
+    bankAccount.currency = paramters[@"currency"];
+    bankAccount.accountTitle = paramters[@"accountTitle"];
+    bankAccount.accountNumber = paramters[@"accountNumber"];
+    bankAccount.bankName = paramters[@"bankName"];
+    bankAccount.branchName = paramters[@"branchName"];
+    bankAccount.branchAddress = paramters[@"branchAddress"];
+    bankAccount.balance = paramters[@"balance"];
+    bankAccount.branchCode = paramters[@"branchCode"];
+    [BankAccount createOrUpdateInRealm:self.realm withValue:bankAccount];
     [self.realm commitWriteTransaction];
 }
 

@@ -48,18 +48,18 @@
     if (![self areFieldsValid]) {
         return;
     }
-    
-    self.bankAccount = [BankAccount new];
-    self.bankAccount.currency = tfCurrency.text;
-    self.bankAccount.balance = @(tfAccountBalance.text.doubleValue);
-    self.bankAccount.accountTitle = tfAccountTitle.text;
-    self.bankAccount.accountNumber = tfAccountNumber.text;
-    self.bankAccount.bankName = tfBankName.text;
-    self.bankAccount.branchName = tfBranchName.text;
-    self.bankAccount.branchCode = @(tfBranchCode.text.integerValue);
-    self.bankAccount.branchAddress = tfBranchAddress.text;
-    
-    [self.realmManager saveAccount:self.bankAccount];
+    if (!self.bankAccount) {
+        self.bankAccount = [BankAccount new];
+    }
+    [self.realmManager saveAccount:self.bankAccount
+                    withParameters:@{@"currency": tfCurrency.text,
+                                     @"accountTitle": tfAccountTitle.text,
+                                     @"accountNumber": tfAccountNumber.text,
+                                     @"bankName": tfBankName.text,
+                                     @"branchName": tfBranchName.text,
+                                     @"branchAddress": tfBranchAddress.text,
+                                     @"balance": @(tfAccountBalance.text.doubleValue),
+                                     @"branchCode": @(tfBranchCode.text.integerValue)}];
     
     [self.navigationController popToRootViewControllerAnimated:YES];
 }

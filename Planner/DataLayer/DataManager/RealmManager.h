@@ -50,7 +50,7 @@
 /**
  * Save or update bank account
  **/
-- (void)saveAccount:(BankAccount *)bankAccount;
+- (void)saveAccount:(BankAccount *)bankAccount withParameters:(NSDictionary*)paramters;
 
 /**
  * Create new transaction
