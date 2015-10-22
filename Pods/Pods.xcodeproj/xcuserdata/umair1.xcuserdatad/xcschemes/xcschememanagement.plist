@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MGSwipeTableCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Planner.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>71C27182E4A7BAF1095B784481F10F34</key>
+		<key>6B974FB465F934B6D99CDB658FAC806B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8FAC528BAA5BB1C462DE527B9ACC66D5</key>
+		<key>8C463CD491D989B457394A7AA95384BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D6E2A640035AC00D2C7334E33391F799</key>
+		<key>9FBF90AF70EDDB3A2EAFC4B4AEB27D58</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DC33C63CB9FE73A1D90A74155A80B00A</key>
+		<key>AE2AC7B20C13DD21A3C0708EF4409701</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F75CBAFA228AFC4A36EA6BA60E613AE7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

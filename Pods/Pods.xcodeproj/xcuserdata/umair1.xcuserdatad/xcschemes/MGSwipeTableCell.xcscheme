@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '248F1A3BD42BDABEA8EF92B0'
-               BlueprintName = 'TPKeyboardAvoiding'
+               BlueprintIdentifier = '860BC207BEEC8DD852E6F877'
+               BlueprintName = 'MGSwipeTableCell'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libTPKeyboardAvoiding.a'>
+               BuildableName = 'libMGSwipeTableCell.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -24,11 +24,6 @@
     [self configureView];
 }
 
-- (void)dealloc
-{
-    self.realmManager = nil;
-}
-
 #pragma mark - Load Data
 
 - (void)initializeVariables {
@@ -49,6 +44,11 @@
 #pragma mark - Action Handlers
 
 - (IBAction)saveActionHandler:(UIBarButtonItem *)sender {
+    
+    if (![self areFieldsValid]) {
+        return;
+    }
+    
     self.bankAccount = [BankAccount new];
     self.bankAccount.currency = tfCurrency.text;
     self.bankAccount.balance = @(tfAccountBalance.text.doubleValue);
@@ -62,6 +62,24 @@
     [self.realmManager saveAccount:self.bankAccount];
     
     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+#pragma mark - Helping Methods
+
+- (BOOL)areFieldsValid {
+    if (!tfAccountBalance.isValid) {
+        [utility showErrorMessageBarWithTitle:TITLE_VALIDATION_FAILED andMessage:MESSAGE_BALANCE_VALIDATION_FAILED];
+        return NO;
+    }
+    if (!tfAccountNumber.isValid) {
+        [utility showErrorMessageBarWithTitle:TITLE_VALIDATION_FAILED andMessage:MESSAGE_ACCOUNT_VALIDATION_FAILED];
+        return NO;
+    }
+    if (!tfAccountTitle.isValid) {
+        [utility showErrorMessageBarWithTitle:TITLE_VALIDATION_FAILED andMessage:MESSAGE_TITLE_VALIDATION_FAILED];
+        return NO;
+    }
+    return YES;
 }
 
 @end

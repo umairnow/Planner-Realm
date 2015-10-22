@@ -10,12 +10,16 @@
 
 @implementation SRConstants
 
-NSString * const ACCESS_PERMISSION_TITLE                = @"Access Permission";
-NSString * const IMAGE_PERMISSION_MESSAGE               = @"Please give StudentsRecord permission to access your photo library in your iPhone settings.";
-NSString * const NEW_IMAGE_SAVED                        = @"NewImageSaved";
+NSString * const TITLE_VALIDATION_FAILED                        = @"Validation Failed";
 
-NSString * const SEGUE_STUDENT_DETAIL                   = @"StudentDetails";
-NSString * const SEGUE_EMBED_CONTAINER                  = @"SemesterDetails";
-NSString * const SEGUE_SEGMENT_LIST                     = @"SegmentList";
-NSString * const SEGUE_SEGMENT_BAR                      = @"SegmentBar";
+// Currency validation failed
+NSString * const MESSAGE_BALANCE_VALIDATION_FAILED              = @"Please enter valid account balance";
+NSString * const MESSAGE_ACCOUNT_VALIDATION_FAILED              = @"Please enter valid account number";
+NSString * const MESSAGE_TITLE_VALIDATION_FAILED                = @"Please enter valid account title";
+
+NSString * const MESSAGE_INCOME_VALIDATION_FAILED               = @"Please enter valid income name";
+NSString * const MESSAGE_INCOMEVALUE_VALIDATION_FAILED          = @"Please enter valid income value";
+
+NSString * const MESSAGE_EXPENSE_VALIDATION_FAILED               = @"Please enter valid expense name";
+NSString * const MESSAGE_EXPENSEVALUE_VALIDATION_FAILED          = @"Please enter valid expense value";
 @end

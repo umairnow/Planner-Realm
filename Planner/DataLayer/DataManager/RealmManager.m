@@ -27,20 +27,19 @@
     return self;
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     self.realm = nil;
 }
 
 #pragma mark - Get Data
 
-- (RLMResults *)getAllIncomes {
-    RLMResults *results = [[TransactionCategory objectsWhere:@"isIncome = 1"] sortedResultsUsingProperty:@"name" ascending:NO];
+- (RLMResults<TransactionCategory *> *)getAllIncomes {
+    RLMResults<TransactionCategory *> *results = [[TransactionCategory objectsWhere:@"isIncome = 1"] sortedResultsUsingProperty:@"name" ascending:NO];
     return results;
 }
 
-- (RLMResults *)getAllExpenses {
-    RLMResults *results = [[TransactionCategory objectsWhere:@"isIncome = 0"] sortedResultsUsingProperty:@"name" ascending:NO];
+- (RLMResults<TransactionCategory *> *)getAllExpenses {
+    RLMResults<TransactionCategory *> *results = [[TransactionCategory objectsWhere:@"isIncome = 0"] sortedResultsUsingProperty:@"name" ascending:NO];
     return results;
 }
 
@@ -65,7 +64,29 @@
 
 - (void)saveAccount:(BankAccount *)bankAccount {
     [self.realm beginWriteTransaction];
-    [BankAccount createOrUpdateInRealm:self.realm withValue:bankAccount];
+    [BankAccount createInDefaultRealmWithValue:bankAccount];
+    [self.realm commitWriteTransaction];
+}
+
+- (void)saveTransaction:(TransactionCategory *)transactionCategory {
+    [self.realm beginWriteTransaction];
+    [TransactionCategory createInRealm:self.realm withValue:transactionCategory];
+    [self.realm commitWriteTransaction];
+}
+
+- (void)updateTransaction:(TransactionCategory *)trans withValues:(NSDictionary *)parameters {
+    [self.realm beginWriteTransaction];
+    trans.name = parameters[@"name"];
+    trans.transactionValue = parameters[@"value"];
+    trans.isRecurring = parameters[@"recurring"];
+    trans.updatedDate = [NSDate date];
+    [TransactionCategory createOrUpdateInRealm:self.realm withValue:trans];
+    [self.realm commitWriteTransaction];
+}
+
+- (void)deleteTransaction:(TransactionCategory *)transactionCategory {
+    [self.realm beginWriteTransaction];
+    [self.realm deleteObject:transactionCategory];
     [self.realm commitWriteTransaction];
 }
 

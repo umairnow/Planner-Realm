@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MGSwipeTableCell.h"
+#import "MGSwipeButton.h"
 
-@interface VCIncomes : UITableViewController
+@interface VCIncomes : UITableViewController <MGSwipeTableCellDelegate> {
+    
+    __weak IBOutlet UILabel *lblIncomes;
+}
+
+@property (strong, nonatomic) RLMArray<TransactionCategory *> *transactionCategories;
+@property (strong, nonatomic) RealmManager *realmManager;
+
+- (void)loadTransactions;
+- (void)updateSum;
 
 @end

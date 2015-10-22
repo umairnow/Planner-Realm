@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TransactionCategory.h"
 
 #define utility [Utility sharedInstance]
 
@@ -21,5 +22,10 @@
  * show error message
  **/
 - (void)showErrorMessageBarWithTitle:(NSString *)title andMessage:(NSString *)message;
+
+/**
+ * converts RLMResults to RLMArray
+ **/
+- (RLMArray<TransactionCategory *> *)convertToArray:(RLMResults<TransactionCategory *> *)results;
 
 @end

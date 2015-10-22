@@ -31,12 +31,6 @@
     [self loadAccountInfo];
 }
 
-- (void)dealloc
-{
-    self.realmManager = nil;
-    self.bankAccount = nil;
-}
-
 #pragma mark - Load Data
 
 - (void)initializeVariables {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B63244B01BD8CD3F006B4123 /* VCAddExpense.m in Sources */ = {isa = PBXBuildFile; fileRef = B63244AF1BD8CD3F006B4123 /* VCAddExpense.m */; settings = {ASSET_TAGS = (); }; };
+		B63244B31BD8CD4E006B4123 /* VCAddIncome.m in Sources */ = {isa = PBXBuildFile; fileRef = B63244B21BD8CD4E006B4123 /* VCAddIncome.m */; settings = {ASSET_TAGS = (); }; };
 		B69056A21BD78483003D4244 /* VCUpdateAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = B69056A11BD78483003D4244 /* VCUpdateAccount.m */; settings = {ASSET_TAGS = (); }; };
 		B69056A61BD78734003D4244 /* UATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B69056A51BD78734003D4244 /* UATextField.m */; settings = {ASSET_TAGS = (); }; };
 		B69F61101BD6C2DF00B166A3 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F610F1BD6C2DF00B166A3 /* BankAccount.m */; settings = {ASSET_TAGS = (); }; };
@@ -30,6 +32,10 @@
 
 /* Begin PBXFileReference section */
 		AA24A4124E03C13123460E3D /* Pods-Planner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Planner/Pods-Planner.debug.xcconfig"; sourceTree = "<group>"; };
+		B63244AE1BD8CD3F006B4123 /* VCAddExpense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCAddExpense.h; sourceTree = "<group>"; };
+		B63244AF1BD8CD3F006B4123 /* VCAddExpense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCAddExpense.m; sourceTree = "<group>"; };
+		B63244B11BD8CD4E006B4123 /* VCAddIncome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCAddIncome.h; sourceTree = "<group>"; };
+		B63244B21BD8CD4E006B4123 /* VCAddIncome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCAddIncome.m; sourceTree = "<group>"; };
 		B69056A01BD78483003D4244 /* VCUpdateAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCUpdateAccount.h; sourceTree = "<group>"; };
 		B69056A11BD78483003D4244 /* VCUpdateAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCUpdateAccount.m; sourceTree = "<group>"; };
 		B69056A41BD78734003D4244 /* UATextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UATextField.h; sourceTree = "<group>"; };
@@ -285,6 +291,8 @@
 			children = (
 				B6CF4E9E1BD8ADFB0040A930 /* VCExpenses.h */,
 				B6CF4E9F1BD8ADFB0040A930 /* VCExpenses.m */,
+				B63244AE1BD8CD3F006B4123 /* VCAddExpense.h */,
+				B63244AF1BD8CD3F006B4123 /* VCAddExpense.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -310,6 +318,8 @@
 			children = (
 				B6CF4E9B1BD8ADD30040A930 /* VCIncomes.h */,
 				B6CF4E9C1BD8ADD30040A930 /* VCIncomes.m */,
+				B63244B11BD8CD4E006B4123 /* VCAddIncome.h */,
+				B63244B21BD8CD4E006B4123 /* VCAddIncome.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -490,11 +500,13 @@
 				B6BEE2F31BD75AE200E62529 /* TransactionCategory.m in Sources */,
 				B69056A61BD78734003D4244 /* UATextField.m in Sources */,
 				B6C8E0821BD662870076E6FF /* VCCharts.m in Sources */,
+				B63244B01BD8CD3F006B4123 /* VCAddExpense.m in Sources */,
 				B6A8E3891BD6352B003F5C3F /* EmptySegue.m in Sources */,
 				B6A8E39D1BD6352B003F5C3F /* Constants.m in Sources */,
 				B6A8E38A1BD6352B003F5C3F /* MessageBarStyleSheet.m in Sources */,
 				B6CF4E9D1BD8ADD30040A930 /* VCIncomes.m in Sources */,
 				B6A8E37F1BD6352B003F5C3F /* AppDelegate.m in Sources */,
+				B63244B31BD8CD4E006B4123 /* VCAddIncome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

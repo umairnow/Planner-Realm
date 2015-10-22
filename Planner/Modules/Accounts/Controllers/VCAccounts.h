@@ -20,6 +20,5 @@
     __weak IBOutlet UILabel *lblBranchAddress;
 }
 
-- (IBAction)cancelUpdateAccount:(UIStoryboardSegue *)sender;
 
 @end

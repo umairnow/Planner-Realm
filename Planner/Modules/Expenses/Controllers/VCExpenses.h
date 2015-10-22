@@ -6,8 +6,11 @@
 //  Copyright © 2015 Umair Aamir. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "VCIncomes.h"
 
-@interface VCExpenses : UITableViewController
+@interface VCExpenses : VCIncomes {
+    
+    __weak IBOutlet UILabel *lblExpenses;
+}
 
 @end

@@ -71,4 +71,10 @@
     return [NSURL fileURLWithPath:[self directoryPath] isDirectory:YES];
 }
 
+- (RLMArray<TransactionCategory *> *)convertToArray:(RLMResults<TransactionCategory *> *)results {
+    RLMArray<TransactionCategory *> *resultArray = [[RLMArray alloc] initWithObjectClassName:@"TransactionCategory"];
+    [resultArray addObjects:results];
+    return resultArray;
+}
+
 @end

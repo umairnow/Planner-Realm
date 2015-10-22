@@ -7,10 +7,11 @@
 //
 
 #import "VCIncomes.h"
+#import "VCAddIncome.h"
 
 @interface VCIncomes ()
 
-@property (strong, nonatomic) RLMArray<TransactionCategory *> *transactionCategories;
+@property (assign, nonatomic) NSInteger selectedCatIndex;
 
 @end
 
@@ -20,12 +21,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self initializeVariables];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.selectedCatIndex = -1;
+    [self loadTransactions];
+}
+
+#pragma mark - Helping Methods
+
+- (void)initializeVariables {
+    self.realmManager = [RealmManager new];
+}
+
+- (void)loadTransactions {
+    RLMResults *results = [self.realmManager getAllIncomes];
+    self.transactionCategories = [utility convertToArray:results];
+    [self.tableView reloadData];
+    [self updateSum];
+}
+
+- (void)updateSum {
+    lblIncomes.text = [NSString stringWithFormat:@"%@", [[self.realmManager getAllIncomes] sumOfProperty:@"transactionValue"]];
 }
 
 #pragma mark - Table view data source
@@ -36,19 +55,50 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExpensesCellIdentifier" forIndexPath:indexPath];
+    MGSwipeTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"IncomesCellIdentifier" forIndexPath:indexPath];
+    cell.rightButtons = @[[MGSwipeButton buttonWithTitle:@"Delete" backgroundColor:[UIColor redColor]],
+                          [MGSwipeButton buttonWithTitle:@"Update" backgroundColor:[UIColor blueColor]]];
+    cell.rightSwipeSettings.transition = MGSwipeTransition3D;
+    cell.delegate = self;
     TransactionCategory *transactionCategory = self.transactionCategories[indexPath.row];
     cell.textLabel.text = transactionCategory.name;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", transactionCategory.transactionValue];
     return cell;
 }
 
+#pragma mark - MGSwipeTableCell Delegate
+
+-(BOOL) swipeTableCell:(MGSwipeTableCell*) cell tappedButtonAtIndex:(NSInteger) index direction:(MGSwipeDirection)direction fromExpansion:(BOOL) fromExpansion {
+    NSInteger selectedIndex = [self.tableView indexPathForCell:cell].row;
+    if (index == 0) {
+        TransactionCategory *transCat = self.transactionCategories[selectedIndex];
+        [self.realmManager deleteTransaction:transCat];
+        [self.transactionCategories removeObjectAtIndex:selectedIndex];
+        [self.tableView beginUpdates];
+        [self.tableView deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:selectedIndex inSection:0]] withRowAnimation:UITableViewRowAnimationAutomatic];
+        [self.tableView endUpdates];
+        [self updateSum];
+    } else {
+        self.selectedCatIndex = selectedIndex;
+        [self performSegueWithIdentifier:@"updateSegue" sender:nil];
+    }
+    return YES;
+}
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if (self.selectedCatIndex >= 0) {
+        if ([segue.destinationViewController respondsToSelector:@selector(transactionCategory)]) {            
+            [segue.destinationViewController setValue:self.transactionCategories[self.selectedCatIndex] forKey:@"transactionCategory"];
+        }
+    }
+}
+
+#pragma mark - Action Handlers
+
+- (IBAction)cancelAddIncome:(UIStoryboardSegue *)sender {
+    
 }
 
 @end

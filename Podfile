@@ -5,5 +5,6 @@ target 'Planner' do
     pod 'Realm'
     pod 'TWMessageBarManager'
     pod 'TPKeyboardAvoiding'
+    pod 'MGSwipeTableCell'
 end
 

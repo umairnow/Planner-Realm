@@ -10,14 +10,15 @@
 
 @interface SRConstants : NSObject
 
-extern NSString * const ACCESS_PERMISSION_TITLE;
-extern NSString * const IMAGE_PERMISSION_MESSAGE;
+extern NSString * const TITLE_VALIDATION_FAILED;
+// Currency validation failed
+extern NSString * const MESSAGE_BALANCE_VALIDATION_FAILED;
+extern NSString * const MESSAGE_ACCOUNT_VALIDATION_FAILED;
+extern NSString * const MESSAGE_TITLE_VALIDATION_FAILED;
 
-extern NSString * const NEW_IMAGE_SAVED;
-
-extern NSString * const SEGUE_STUDENT_DETAIL;
-extern NSString * const SEGUE_EMBED_CONTAINER;
-extern NSString * const SEGUE_SEGMENT_LIST;
-extern NSString * const SEGUE_SEGMENT_BAR;
+extern NSString * const MESSAGE_INCOME_VALIDATION_FAILED;
+extern NSString * const MESSAGE_INCOMEVALUE_VALIDATION_FAILED;
+extern NSString * const MESSAGE_EXPENSE_VALIDATION_FAILED;
+extern NSString * const MESSAGE_EXPENSEVALUE_VALIDATION_FAILED;
 
 @end

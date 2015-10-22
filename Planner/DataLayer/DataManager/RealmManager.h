@@ -12,9 +12,28 @@
 
 @interface RealmManager : NSObject
 
-- (RLMResults *)getAllIncomes;
-- (RLMResults *)getAllExpenses;
+- (RLMResults<TransactionCategory *> *)getAllIncomes;
+- (RLMResults<TransactionCategory *> *)getAllExpenses;
 - (BankAccount *)getAccountInfo;
 
+/**
+ * Save or update bank account
+ **/
 - (void)saveAccount:(BankAccount *)bankAccount;
+
+/**
+ * Create new transaction
+ **/
+- (void)saveTransaction:(TransactionCategory *)transactionCategory;
+
+/**
+ * Update transaction
+ **/
+- (void)updateTransaction:(TransactionCategory *)trans withValues:(NSDictionary *)parameters;
+
+/**
+ * Delete transaction from database
+ **/
+- (void)deleteTransaction:(TransactionCategory *)transactionCategory;
+
 @end

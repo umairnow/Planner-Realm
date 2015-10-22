@@ -1,4 +1,5 @@
 PODS:
+  - MGSwipeTableCell (1.5.1)
   - Realm (0.96.0):
     - Realm/Headers (= 0.96.0)
   - Realm/Headers (0.96.0)
@@ -6,11 +7,13 @@ PODS:
   - TWMessageBarManager (1.7.2)
 
 DEPENDENCIES:
+  - MGSwipeTableCell
   - Realm
   - TPKeyboardAvoiding
   - TWMessageBarManager
 
 SPEC CHECKSUMS:
+  MGSwipeTableCell: a51fa670c01f0aa048f12af040acebf315223137
   Realm: d1b1eff5264cd6a3158b7a9b6c499d7f6ad3a860
   TPKeyboardAvoiding: 614ebec846ec28b83d548769297fa5fb56468904
   TWMessageBarManager: e7adc066ee425174f5dee79473fce913b1cd1662
