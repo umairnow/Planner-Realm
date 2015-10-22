@@ -6,18 +6,18 @@
 //
 
 #import <Realm/Realm.h>
-#import "Transaction.h"
 
-RLM_ARRAY_TYPE(TransactionCategories)
+RLM_ARRAY_TYPE(TransactionCategory)
 
-@interface TransactionCategories : RLMObject
+@interface TransactionCategory : RLMObject
 
-@property (assign, nonatomic) NSNumber<RLMInt> *categoryId;
 @property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSDate *updatedDate;
+@property (strong, nonatomic) NSDate *transactionDate;
 @property (strong, nonatomic) NSNumber<RLMBool> *isIncome;
+@property (assign, nonatomic) NSNumber<RLMInt> *categoryId;
 @property (strong, nonatomic) NSNumber<RLMBool> *isRecurring;
-
-@property RLMArray<Transaction *><Transaction> *transactions;
+@property (strong, nonatomic) NSNumber<RLMDouble> *transactionValue;
 
 @end
 

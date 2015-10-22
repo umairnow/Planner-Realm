@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B69056A21BD78483003D4244 /* VCUpdateAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = B69056A11BD78483003D4244 /* VCUpdateAccount.m */; settings = {ASSET_TAGS = (); }; };
 		B69056A61BD78734003D4244 /* UATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B69056A51BD78734003D4244 /* UATextField.m */; settings = {ASSET_TAGS = (); }; };
-		B69F610D1BD6C2BE00B166A3 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F610C1BD6C2BE00B166A3 /* Transaction.m */; settings = {ASSET_TAGS = (); }; };
 		B69F61101BD6C2DF00B166A3 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F610F1BD6C2DF00B166A3 /* BankAccount.m */; settings = {ASSET_TAGS = (); }; };
 		B69F61161BD6C79700B166A3 /* RealmManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B69F61151BD6C79700B166A3 /* RealmManager.m */; settings = {ASSET_TAGS = (); }; };
 		B6A8E37F1BD6352B003F5C3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E32A1BD6352B003F5C3F /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
@@ -20,12 +19,12 @@
 		B6A8E39C1BD6352B003F5C3F /* SBMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A8E3791BD6352B003F5C3F /* SBMain.storyboard */; settings = {ASSET_TAGS = (); }; };
 		B6A8E39D1BD6352B003F5C3F /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E37C1BD6352B003F5C3F /* Constants.m */; settings = {ASSET_TAGS = (); }; };
 		B6A8E39E1BD6352B003F5C3F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8E37E1BD6352B003F5C3F /* Utility.m */; settings = {ASSET_TAGS = (); }; };
-		B6BEE2F31BD75AE200E62529 /* TransactionCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BEE2F21BD75AE200E62529 /* TransactionCategories.m */; settings = {ASSET_TAGS = (); }; };
+		B6BEE2F31BD75AE200E62529 /* TransactionCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BEE2F21BD75AE200E62529 /* TransactionCategory.m */; settings = {ASSET_TAGS = (); }; };
 		B6BEE2F71BD764E400E62529 /* NSObject+AutoIncrementNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BEE2F61BD764E400E62529 /* NSObject+AutoIncrementNumber.m */; settings = {ASSET_TAGS = (); }; };
 		B6C8E07F1BD662650076E6FF /* VCAccounts.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E07E1BD662650076E6FF /* VCAccounts.m */; settings = {ASSET_TAGS = (); }; };
 		B6C8E0821BD662870076E6FF /* VCCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E0811BD662870076E6FF /* VCCharts.m */; settings = {ASSET_TAGS = (); }; };
-		B6C8E0851BD662DB0076E6FF /* VCExpenses.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E0841BD662DB0076E6FF /* VCExpenses.m */; settings = {ASSET_TAGS = (); }; };
-		B6C8E0881BD662ED0076E6FF /* VCIncomes.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C8E0871BD662ED0076E6FF /* VCIncomes.m */; settings = {ASSET_TAGS = (); }; };
+		B6CF4E9D1BD8ADD30040A930 /* VCIncomes.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CF4E9C1BD8ADD30040A930 /* VCIncomes.m */; settings = {ASSET_TAGS = (); }; };
+		B6CF4EA01BD8ADFB0040A930 /* VCExpenses.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CF4E9F1BD8ADFB0040A930 /* VCExpenses.m */; settings = {ASSET_TAGS = (); }; };
 		F2A43AC687D1FE812ECCFF1B /* libPods-Planner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC58EEDD36D98BDD2125BC2C /* libPods-Planner.a */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +34,6 @@
 		B69056A11BD78483003D4244 /* VCUpdateAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCUpdateAccount.m; sourceTree = "<group>"; };
 		B69056A41BD78734003D4244 /* UATextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UATextField.h; sourceTree = "<group>"; };
 		B69056A51BD78734003D4244 /* UATextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UATextField.m; sourceTree = "<group>"; };
-		B69F610B1BD6C2BE00B166A3 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
-		B69F610C1BD6C2BE00B166A3 /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
 		B69F610E1BD6C2DF00B166A3 /* BankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
 		B69F610F1BD6C2DF00B166A3 /* BankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
 		B69F61141BD6C79700B166A3 /* RealmManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmManager.h; sourceTree = "<group>"; };
@@ -57,18 +54,18 @@
 		B6A8E37C1BD6352B003F5C3F /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		B6A8E37D1BD6352B003F5C3F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		B6A8E37E1BD6352B003F5C3F /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
-		B6BEE2F11BD75AE200E62529 /* TransactionCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionCategories.h; sourceTree = "<group>"; };
-		B6BEE2F21BD75AE200E62529 /* TransactionCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionCategories.m; sourceTree = "<group>"; };
+		B6BEE2F11BD75AE200E62529 /* TransactionCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionCategory.h; sourceTree = "<group>"; };
+		B6BEE2F21BD75AE200E62529 /* TransactionCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionCategory.m; sourceTree = "<group>"; };
 		B6BEE2F51BD764E400E62529 /* NSObject+AutoIncrementNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoIncrementNumber.h"; sourceTree = "<group>"; };
 		B6BEE2F61BD764E400E62529 /* NSObject+AutoIncrementNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoIncrementNumber.m"; sourceTree = "<group>"; };
 		B6C8E07D1BD662650076E6FF /* VCAccounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCAccounts.h; sourceTree = "<group>"; };
 		B6C8E07E1BD662650076E6FF /* VCAccounts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCAccounts.m; sourceTree = "<group>"; };
 		B6C8E0801BD662870076E6FF /* VCCharts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCharts.h; sourceTree = "<group>"; };
 		B6C8E0811BD662870076E6FF /* VCCharts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCharts.m; sourceTree = "<group>"; };
-		B6C8E0831BD662DB0076E6FF /* VCExpenses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCExpenses.h; sourceTree = "<group>"; };
-		B6C8E0841BD662DB0076E6FF /* VCExpenses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCExpenses.m; sourceTree = "<group>"; };
-		B6C8E0861BD662ED0076E6FF /* VCIncomes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCIncomes.h; sourceTree = "<group>"; };
-		B6C8E0871BD662ED0076E6FF /* VCIncomes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCIncomes.m; sourceTree = "<group>"; };
+		B6CF4E9B1BD8ADD30040A930 /* VCIncomes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCIncomes.h; sourceTree = "<group>"; };
+		B6CF4E9C1BD8ADD30040A930 /* VCIncomes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCIncomes.m; sourceTree = "<group>"; };
+		B6CF4E9E1BD8ADFB0040A930 /* VCExpenses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCExpenses.h; sourceTree = "<group>"; };
+		B6CF4E9F1BD8ADFB0040A930 /* VCExpenses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCExpenses.m; sourceTree = "<group>"; };
 		BC58EEDD36D98BDD2125BC2C /* libPods-Planner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Planner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFFA26693D6C996CB14F01C /* Pods-Planner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Planner/Pods-Planner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -286,8 +283,8 @@
 		B6A8E3CD1BD63B4B003F5C3F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B6C8E0831BD662DB0076E6FF /* VCExpenses.h */,
-				B6C8E0841BD662DB0076E6FF /* VCExpenses.m */,
+				B6CF4E9E1BD8ADFB0040A930 /* VCExpenses.h */,
+				B6CF4E9F1BD8ADFB0040A930 /* VCExpenses.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -311,8 +308,8 @@
 		B6A8E3D01BD63B4B003F5C3F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B6C8E0861BD662ED0076E6FF /* VCIncomes.h */,
-				B6C8E0871BD662ED0076E6FF /* VCIncomes.m */,
+				B6CF4E9B1BD8ADD30040A930 /* VCIncomes.h */,
+				B6CF4E9C1BD8ADD30040A930 /* VCIncomes.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -354,12 +351,10 @@
 		B6C8E07C1BD660240076E6FF /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
-				B69F610B1BD6C2BE00B166A3 /* Transaction.h */,
-				B69F610C1BD6C2BE00B166A3 /* Transaction.m */,
 				B69F610E1BD6C2DF00B166A3 /* BankAccount.h */,
 				B69F610F1BD6C2DF00B166A3 /* BankAccount.m */,
-				B6BEE2F11BD75AE200E62529 /* TransactionCategories.h */,
-				B6BEE2F21BD75AE200E62529 /* TransactionCategories.m */,
+				B6BEE2F11BD75AE200E62529 /* TransactionCategory.h */,
+				B6BEE2F21BD75AE200E62529 /* TransactionCategory.m */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -490,16 +485,15 @@
 				B69F61161BD6C79700B166A3 /* RealmManager.m in Sources */,
 				B6BEE2F71BD764E400E62529 /* NSObject+AutoIncrementNumber.m in Sources */,
 				B69056A21BD78483003D4244 /* VCUpdateAccount.m in Sources */,
+				B6CF4EA01BD8ADFB0040A930 /* VCExpenses.m in Sources */,
 				B6A8E39E1BD6352B003F5C3F /* Utility.m in Sources */,
-				B6C8E0881BD662ED0076E6FF /* VCIncomes.m in Sources */,
-				B6BEE2F31BD75AE200E62529 /* TransactionCategories.m in Sources */,
+				B6BEE2F31BD75AE200E62529 /* TransactionCategory.m in Sources */,
 				B69056A61BD78734003D4244 /* UATextField.m in Sources */,
 				B6C8E0821BD662870076E6FF /* VCCharts.m in Sources */,
-				B69F610D1BD6C2BE00B166A3 /* Transaction.m in Sources */,
 				B6A8E3891BD6352B003F5C3F /* EmptySegue.m in Sources */,
 				B6A8E39D1BD6352B003F5C3F /* Constants.m in Sources */,
 				B6A8E38A1BD6352B003F5C3F /* MessageBarStyleSheet.m in Sources */,
-				B6C8E0851BD662DB0076E6FF /* VCExpenses.m in Sources */,
+				B6CF4E9D1BD8ADD30040A930 /* VCIncomes.m in Sources */,
 				B6A8E37F1BD6352B003F5C3F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

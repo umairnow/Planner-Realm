@@ -35,12 +35,12 @@
 #pragma mark - Get Data
 
 - (RLMResults *)getAllIncomes {
-    RLMResults *results = [[TransactionCategories objectsWhere:@"isIncome = 1"] sortedResultsUsingProperty:@"name" ascending:NO];
+    RLMResults *results = [[TransactionCategory objectsWhere:@"isIncome = 1"] sortedResultsUsingProperty:@"name" ascending:NO];
     return results;
 }
 
 - (RLMResults *)getAllExpenses {
-    RLMResults *results = [[TransactionCategories objectsWhere:@"isIncome = 0"] sortedResultsUsingProperty:@"name" ascending:NO];
+    RLMResults *results = [[TransactionCategory objectsWhere:@"isIncome = 0"] sortedResultsUsingProperty:@"name" ascending:NO];
     return results;
 }
 
